@@ -1,6 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority";
-// import { LoadingSpinner } from "./LoadingSpinner";
-import { cn } from "../utils/lib";
+import { cn } from "../../utils/lib";
 import { forwardRef, Ref } from "react";
 import { LoadingSpinner } from "./LoadingSpinner";
 

@@ -1,5 +1,5 @@
 import { ctxTest } from "../App";
-import { useDialogContext } from "./Dialog";
+import { useDialogContext } from "./ui/Dialog";
 
 export default function DialogTest() {
   const { content } = useDialogContext<ctxTest>();

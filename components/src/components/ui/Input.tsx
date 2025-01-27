@@ -1,6 +1,6 @@
 import { InputHTMLAttributes, Ref, forwardRef } from "react";
 import Skeleton from "react-loading-skeleton";
-import { cn } from "../utils/lib";
+import { cn } from "../../utils/lib";
 
 type Props = {
   /**

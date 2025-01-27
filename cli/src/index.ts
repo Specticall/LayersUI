@@ -1,13 +1,26 @@
-import { config } from "dotenv";
+#!/usr/bin/env node
+import { Command } from "commander";
+import { add } from "./commands/add.js";
+import path from "path";
 
-// Configure enviroment variables
-config({ path: "./.env" });
+async function main() {
+  const program = new Command()
+    .name("layers-ui")
+    .description("Adds pre-made components to projects")
+    .version("1.0.0");
 
-//////////////////////////
+  program.addCommand(add);
 
-import app from "./app";
+  program.parse(process.argv);
+}
 
-const PORT = process.env.PORT;
-app.listen(PORT, () => {
-  console.log(`Application Running on port ${PORT}...`);
-});
+function test() {
+  // const cwd = path.resolve("./src/components");
+  // console.log(cwd);
+}
+
+if (process.argv[2] === "test") {
+  test();
+} else {
+  main();
+}

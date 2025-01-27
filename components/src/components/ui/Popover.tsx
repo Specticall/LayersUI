@@ -11,7 +11,7 @@ import {
   useRef,
   useState,
 } from "react";
-import { cn } from "../utils/lib";
+import { cn } from "../../utils/lib";
 
 type Props = {
   /**

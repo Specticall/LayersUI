@@ -1,0 +1,6 @@
+{
+  "path": {
+    "utils": "/src/utils",
+    "components": "/src/components/ui-test"
+  }
+}

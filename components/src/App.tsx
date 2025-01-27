@@ -1,5 +1,5 @@
-import DashboardLayout from "./components/DashboardLayout";
-import { useDialog } from "./components/Dialog";
+import DashboardLayout from "./components/ui/DashboardLayout";
+import { useDialog } from "./components/ui/Dialog";
 import { dialogComponents } from "./main";
 
 export type ctxTest = { content: string };

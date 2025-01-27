@@ -6,7 +6,7 @@ import {
   useCallback,
   useState,
 } from "react";
-import { cn } from "../utils/lib";
+import { cn } from "../../utils/lib";
 import Popover from "./Popover";
 import Skeleton from "react-loading-skeleton";
 

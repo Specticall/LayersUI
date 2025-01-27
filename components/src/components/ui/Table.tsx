@@ -1,5 +1,5 @@
 import { forwardRef, HTMLAttributes, PropsWithChildren, Ref } from "react";
-import { cn } from "../utils/lib";
+import { cn } from "../../utils/lib";
 
 /**
  * @example

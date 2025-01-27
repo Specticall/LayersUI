@@ -1,4 +1,4 @@
-import React, {
+import {
   MouseEvent,
   ReactElement,
   ReactNode,
@@ -8,7 +8,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { cn } from "../utils/lib";
+import { cn } from "../../utils/lib";
 
 const ANIMATION_DURATION_MS = 200;
 
