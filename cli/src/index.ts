@@ -1,17 +1,20 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import { add } from "./commands/add.js";
-import path from "path";
 
 async function main() {
-  const program = new Command()
-    .name("layers-ui")
-    .description("Adds pre-made components to projects")
-    .version("1.0.0");
+  try {
+    const program = new Command()
+      .name("layers-ui")
+      .description("Adds pre-made components to projects")
+      .version("1.0.0");
 
-  program.addCommand(add);
+    program.addCommand(add);
 
-  program.parse(process.argv);
+    program.parse(process.argv);
+  } catch (err) {
+    console.log((err as Error).message);
+  }
 }
 
 function test() {

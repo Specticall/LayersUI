@@ -2,7 +2,7 @@ import fs from "fs/promises";
 
 export async function fileExists(path: string) {
   try {
-    await fs.access(path);
+    await fs.stat(path);
     return true;
   } catch {
     return false;
@@ -13,16 +13,19 @@ export async function writeFileTo({
   path,
   file,
   name,
+  replace,
 }: {
   path: string;
   file: string;
   name: string;
+  replace?: boolean;
 }) {
-  const fileAlreadyExists = await fileExists(path);
-  if (fileAlreadyExists) {
-    throw new Error(`File with the name ${name} already exists`);
+  const pathWithFileName = `${path}/${name}`;
+  const fileAlreadyExists = await fileExists(pathWithFileName);
+  if (fileAlreadyExists && !replace) {
+    return false;
   }
 
-  await fs.writeFile(`${path}/${name}`, file);
-  return "Successfuly written file";
+  await fs.writeFile(pathWithFileName, file);
+  return true;
 }

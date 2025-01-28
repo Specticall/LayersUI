@@ -2,18 +2,22 @@ import path from "path";
 import { prisma } from "../config/config.js";
 import fs from "fs/promises";
 
-const cn = ["tailwind-merge", "clsx"];
+const cn = ["package/dev/tailwind-merge", "package/dev/clsx"];
 
 const components = [
   {
     name: "button",
     fileName: "Button.tsx",
-    dependencies: [...cn, "class-variance-authority", "loading-spinner"],
+    dependencies: [
+      ...cn,
+      "package/dev/class-variance-authority",
+      "component/loading-spinner",
+    ],
   },
   {
     name: "dashboard-layout",
     fileName: "DashboardLayout.tsx",
-    dependencies: ["table"],
+    dependencies: ["component/table"],
   },
   {
     name: "dialog",
@@ -23,12 +27,16 @@ const components = [
   {
     name: "dropdown",
     fileName: "Dropdown.tsx",
-    dependencies: [...cn, "popover", "react-loading-skeleton"],
+    dependencies: [
+      ...cn,
+      "component/popover",
+      "package/react-loading-skeleton",
+    ],
   },
   {
     name: "input",
     fileName: "Input.tsx",
-    dependencies: [...cn, "react-loading-skeleton"],
+    dependencies: [...cn, "package/react-loading-skeleton"],
   },
   {
     name: "loading-spinner",
