@@ -1,3 +1,4 @@
+import Button from "./components/ui/Button";
 import DashboardLayout from "./components/ui/DashboardLayout";
 import { useDialog } from "./components/ui/Dialog";
 import { dialogComponents } from "./main";
@@ -9,7 +10,7 @@ export default function App() {
 
   return (
     <div>
-      <button
+      <Button
         onClick={() => {
           dialog.open("test", {
             content: "I was testing",
@@ -17,7 +18,7 @@ export default function App() {
         }}
       >
         OPEN DIALOG
-      </button>
+      </Button>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/utils/lib";
 import { forwardRef, Ref } from "react";
-import { LoadingSpinner } from "@/components/ui/LoadingSpinner";
+import { LoadingSpinner } from "@/components/ui-test/LoadingSpinner";
 
 const buttonVariants = cva(
   "flex items-center justify-center whitespace-nowrap rounded-sm text-sm transition-colors disabled:pointer-events-none px-6 py-3 cursor-pointer transition disabled:bg-slate-500 leading-[100%] items-center",

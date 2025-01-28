@@ -6,7 +6,7 @@ import {
   useMemo,
   useState,
 } from "react";
-import { cn } from "../../utils/lib";
+import { cn } from "@/utils/lib";
 import { createPortal } from "react-dom";
 
 type ToastContextValues = {

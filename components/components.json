@@ -1,6 +1,6 @@
 {
   "path": {
-    "utils": "/src/utils",
+    "utils": "/src/utils/lib",
     "components": "/src/components/ui-test"
   }
 }

@@ -7,7 +7,7 @@ import {
   useState,
 } from "react";
 import { cn } from "@/utils/lib";
-import Popover from "@/components/ui/Popover";
+import Popover from "@/components/ui-test/Popover";
 import Skeleton from "react-loading-skeleton";
 
 type Props = {
