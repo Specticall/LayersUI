@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import "react-loading-skeleton/dist/skeleton.css";
-import ToastProvider from "./components/ui/Toast.tsx";
 import { DialogComponents, DialogProvider } from "./components/ui/Dialog.tsx";
 import DialogTest from "./components/DialogTest.tsx";
 

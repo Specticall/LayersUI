@@ -1,5 +1,4 @@
 import Button from "./components/ui/Button";
-import DashboardLayout from "./components/ui/DashboardLayout";
 import { useDialog } from "./components/ui/Dialog";
 import { dialogComponents } from "./main";
 
